@@ -1,17 +1,24 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, {useState} from 'react'
 import Header from "../components/Header";
 import Container from '../components/Container';
 import Footer from "../components/Footer";
 import Button from '../components/Button'
 import { NAV_LINKS } from '../../data';
+import Map from '../components/Map';
 
 
 // img
 import IMG from '../assets/karyasentosa_about_page.jpg'
 
+
 const Abouts = ()=> {
+    const [activeSection, setActiveSection] = useState('visimisi')
+
+    const toogleSection = (section) => {
+        setActiveSection(section)
+    }
 
     const hendeleClick= (url) =>{
         window.open(url,"_blank")
@@ -23,7 +30,7 @@ const Abouts = ()=> {
             
             {/* <!-- about us --> */}
             <Container>
-            <section className="bg-gray-100 my-32" id="aboutus">
+            <section className="bg-gray-100 mt-32" id="aboutus">
                 <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                         <div className="max-w-lg">
@@ -57,16 +64,50 @@ const Abouts = ()=> {
                             ))}
                             </div>
                         </div>
-                        <div className="mt-12 md:mt-0">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Visi</h2>
-                            <p className="mt-4 text-gray-600 text-lg">
-                            Menjadi sebuah perusahaan jasa yang maju, berkembang dan selalu siap berkompetisi di bidangnya.
-                            </p>
+                        <div className="mt-12 md:mt-0 ">
+                            <table className='w-full border border-gray-300 '>
+                             <thead>
+                              <tr className='bg-gray-200  '>
+                                    <th className='px-2 cursor-pointer w-1/2' onClick={() => toogleSection('visimisi')}>Visi & Misi</th>
+                                    <th className='px-2 cursor-pointer w-1/2' onClick={() =>toogleSection('sertifikasi')}>Sertifikasi</th>
+                              </tr>
+                             </thead>
+                            
+                            {activeSection === 'visimisi' && (
+                                <td colSpan={2} >
+                                <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">Visi</h2>
+                                <p className="mt-4 text-gray-600 text-lg text-center">
+                                Menjadi sebuah perusahaan jasa yang maju, berkembang dan selalu siap berkompetisi di bidangnya.
+                                </p>
+    
+                                <h2 className="text-2xl font-bold mt-8 text-gray-800 mb-8 text-center">Misi</h2>
+                                <p className="mt-4 text-gray-600 text-lg text-center">
+                                Selalu memberikan pelayanan yang maksimal dan terpercaya sehingga dapat menjadi referensi terbaik bagi para pelanggan.
+                                </p>
+                                </td>
+                            )}
+                            {activeSection === 'sertifikasi' && (
+                                <td colSpan={2}>
+                                <h2 className="text-2xl font-bold text-gray-800 mb-2 text-center">Sertifikasi Perusahaan</h2>
+                                <h3 className="text-xl font-bold text-gray-700 mb-2 text-center">Akta Pendirian Perusahaan</h3>
+                                <p className="mt-1 text-gray-600 text-md text-center">
+                                Notaris- Arfiana Purbohadi, SH (19 September 2007)</p>
+                                <p className="mt-1 text-gray-600 text-md text-center">
+                                Akta Perubahan 
+                                Notaris- Nurwahidah Z.Isnaini, SH (11 Oktober 2016)
 
-                            <h2 className="text-3xl font-bold mt-8 text-gray-800 mb-8 text-center">Misi</h2>
-                            <p className="mt-4 text-gray-600 text-lg">
-                            Selalu memberikan pelayanan yang maksimal dan terpercaya sehingga dapat menjadi referensi terbaik bagi para pelanggan.
-                            </p>
+                                </p>
+                                <h2 className="text-xl font-bold text-gray-700 mb-2 text-center">Ijin Usaha Konstruksi</h2>
+                                <p className="mt-1 text-gray-600 text-md text-center">
+                                602/0069/DPMPTSP/PK.-I.U.J.K/V/2019
+                                </p>
+                                <h2 className="text-xl font-bold text-gray-700 mb-2 text-center">Ahli K3</h2>
+                                <p className="mt-1 text-gray-600 text-md text-center">
+                                No.Reg. 44551/PK3/AJ/32/2017/PO
+                                </p>
+                                </td>
+                            )}
+                        </table>
                         </div>
                     </div>
                 </div>
@@ -76,7 +117,10 @@ const Abouts = ()=> {
             
                    
             
-
+            <div className='py-10'>
+            <h1 className='text-4xl font-semibold text-secondary-500 text-center mb-8'>Kantor Kami</h1>
+            <Map />
+            </div>
             </Container>
             
             

@@ -1,6 +1,8 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Container from "../components/Container"
+import Map from "../components/Map"
+import { FaMapLocation } from "react-icons/fa6";
 
 const Kontak = ()=>{
     return(
@@ -8,15 +10,16 @@ const Kontak = ()=>{
         <Header/>
             <Container>
                 {/* <!--Contact--> */}
-                <div className="py-32 max-w-screen-xl mx-auto  lg:px-20" id="contact">
+                <div className="py-32 max-w-screen-xl mx-auto lg:px-20" id="contact">
+                <Map/>
                 <form action="" method="post">
                     <div className="w-full p-8 my-4 mr-auto shadow-2xl md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 rounded-2xl">
-                    <div className="flex">
-                        <h1 className="text-5xl text-[#A85168] font-bold ">Hire Me</h1>
+                    <div className="flex flex-col gap-6">
+                        <h1 className="text-5xl textaccent-500 font-bold ">Hubungi Kami</h1>
+                        <p className="text-md text-primary-100 font-bold ">Silakan isi Form Dibawah ini</p>
                     </div>
-                    <div className="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2">
-                        <input className="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:border-outline" type="text" placeholder="First Name" name="firstName" autoComplete="name" />
-                        <input className="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder="Last Name" name="lastName" autoComplete="family-name" />
+                    <div className="grid grid-cols-1 gap-5 mt-5">
+                        <input className="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:border-outline" type="text" placeholder="Nama" name="name" autoComplete="name" />
                         <input className="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline" type="email" placeholder="Email" name="email" autoComplete="email" />
                         <input className="w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none focus:shadow-outline" type="tel" placeholder="Phone" name="phone" autoComplete="tel" />
                     </div>
@@ -32,27 +35,29 @@ const Kontak = ()=>{
                 </form>
                 <div className="w-full px-8 py-12 ml-auto bg-[#1B6485] lg:-mt-96 lg:w-2/6 rounded-2xl">
                     <div className="flex flex-col text-white">
-                    <div className="flex w-2/3 my-4 lg:w-1/2">
-                        <img className="pt-2 pr-2 h-7 w-7" src="https://icons8.com/icon/OBmVbH2qOGwK/location" alt="location"/>
-                        <div>
+                    <div className="flex flex-row my-4 ">
+                        <FaMapLocation className="flex w-1/4" size={30} />
+                        <div className="flex-1 flex-col">
                         <h2 className="text-2xl">Office</h2>
-                        <p className="text-gray-200">27B Grassfield, Lumely</p>
+                        <p className="text-gray-200">Jl. Raya Sawangan Ruko CBD Maharaja No.12A Rt 001 Rw 001 Kel. Mampang Kec. Pancoran Mas</p>
                         </div>
                     </div>
-                    <div className="flex w-2/3 my-4 lg:w-1/2">
-                        <img className="pt-2 pr-2 h-7 w-7 " src="https://icons8.com/icon/letUS1DJO1ou/call" alt="call us"/>
-                        <div>
+                    <div className="flex flex-row my-4 ">
+                    <FaMapLocation className="flex w-1/4" size={30} />
+                    <div className="flex-1 flex-col">
                         <h2 className="text-2xl">Call</h2>
-                        <p className="text-gray-200">Tel:+232-79-15-39-15</p>
+                        <p className="text-gray-200">Tel: +62 878-7514-5832</p>
                         </div>
                     </div>
-                    <div className="flex w-2/3 my-4 lg:w-1/2">
-                        <img className="pt-2 pr-2 h-7 w-7" src="https://icons8.com/icon/LPcVDft9Isqt/email" alt="Email us"/>
-                        <div>
+                    <div className="flex flex-row my-4 ">
+                    <FaMapLocation className="flex w-1/4" size={30} />
+                    <div className="flex-1 flex-col">
                         <h2 className="text-2xl">Email</h2>
-                        <p className="text-gray-200">Email:kanujosephmelvin@gmail.com</p>
+                        
                         </div>
                     </div>
+                    <p className="text-gray-200 text-center">karyasentoaunggul@gmail.com</p>
+                    
                     </div>
                 </div>
                 </div>

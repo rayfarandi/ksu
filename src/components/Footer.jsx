@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row gap-16">
                 <div className="flex flex-col w-full justify-center items-center mx-auto md:items-start sm:max-w-[400px]">
                     <Logo />
-                    <div className="text-primary-100 mt-6 text-center md:text-start w-full">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, fugiat.</div>
+                    <div className="text-primary-100 mt-6 text-center md:text-start w-full">Wujudkan Impian Anda Bersama Kami, Karya Sentosa Unggul Siap Membantu Anda</div>
                     <div className="flex gap-6 text-accent-500 mt-6">
                     <a href="#">
                         <AiFillFacebook size={30} />    
@@ -38,18 +38,25 @@ const Footer = () => {
                         }
                     </ul>
                 </div>
-                <div className="flex-grow">
-                    <form className="w-full flex flex-col gap-6">
-                        <div className="flex gap-6 flex-col w-full ">
-                            <input type="text" placeholder="Name" className="flex-1 h-10 text-primary-100 w-full py-4 outline-none bg-transparent border-b border-primary-100" />
-                            <input type="email" placeholder="Email" className="flex-1 h-10 text-primary-100 w-full py-4 outline-none bg-transparent border-b border-primary-100" />
-                            <textarea placeholder="Message" className="flex-1 h-10 text-primary-100 w-full py-4 outline-none bg-transparent border-b border-primary-100" id=""></textarea>
-                            <Button>Send</Button>
+                <div className="flex flex-col">
+                    <div className="flex w-full flex-col gap-6">
+                        <p className="text-primary-100 text-xl">Contact</p>
+                        <div className="gap-3">
+                            <p className="text-primary-100 text-lg">email: karyasentoaunggul@gmail.com</p>
+                            <p className="text-primary-100 text-lg">WA: +62 878-7514-5832</p>
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <div className="flex flex-col">
+                    <div className="flex w-full flex-col gap-6">
+                        <p className="text-primary-100 text-xl">Office</p>
+                        <div className="flex gap-3">
+                            <p className="text-primary-100 text-lg">Jl. Raya Sawangan Ruko CBD Maharaja No.12A Rt 001 Rw 001 Kel. Mampang Kec. Pancoran Mas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="text-primary-100 text-center mt-12 text-sm">Copyright © 2024 Se Home. All rights reserved.</div>
+            <div className="text-primary-100 text-center mt-12 text-sm">Copyright © 2024 PT KARYA SENTOSA UNGGUL . All rights reserved.</div>
             </Container>
         </div>
         </>
