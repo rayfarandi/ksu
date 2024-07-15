@@ -33,22 +33,24 @@ const Header = () => {
         setNavBg(urlNotBlank ? '' : 'bg-secondary-500');
 
         //Add google Tag Manager
-        const gtm = document.createElement('script');
-        gtm.src('https://www.googletagmanager.com/gtag/js?id=G-TSE0B6ME3H')
-        gtm.async = true
-        document.head.appendChild(gtm)
         
-        const gtm2 = document.createElement('gtm')
-        gtm2.innerHTML = `
+        const script = document.createElement('script');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-TSE0B6ME3H";
+        script.async = true;
+        document.head.appendChild(script);
+
+        const script2 = document.createElement('script');
+        script2.innerHTML = `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-TSE0B6ME3H')`
+            gtag('config', 'G-TSE0B6ME3H');
+        `;
+        document.head.appendChild(script2);
 
-        document.head.appendChild(gtm2)
-        return () =>{
-            document.head.removeChild(gtm)
-            document.head.removeChild(gtm2)
+        return () => {
+            document.head.removeChild(script);
+            document.head.removeChild(script2);
         }
     }, []);
 
