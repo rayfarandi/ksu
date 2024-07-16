@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Button from '../components/Button'
 import { NAV_LINKS } from '../../data';
 import Map from '../components/Map';
+import {Helmet} from "react-helmet";
 
 
 // img
@@ -25,6 +26,12 @@ const Abouts = ()=> {
     }
     return(
         <>
+        <Helmet>
+            <title>Karya Sentosa Unggul - About</title>
+            <meta name='description' content='Karya Sentosa Unggul - About' />
+            <meta name='keywords' content='About KSU' />
+            <link rel="canonical" href="https://karya-sentosa-unggul.co.id/about" />
+        </Helmet>
         <div className="w-full min-h-screen overflow-x-hidden relative">
             <Header/>
             

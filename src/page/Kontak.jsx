@@ -7,6 +7,12 @@ import { FaMapLocation } from "react-icons/fa6";
 const Kontak = ()=>{
     return(
         <>
+        <Helmet>
+            <title>Karya Sentosa Unggul - Kontak</title>
+            <meta name='description' content='Karya Sentosa Unggul - Kontak' />
+            <meta name='keywords' content='Kontak Pt KSU' />
+            <link rel="canonical" href="https://karya-sentosa-unggul.co.id/kontak" />
+        </Helmet>
         <Header/>
             <Container>
                 {/* <!--Contact--> */}
