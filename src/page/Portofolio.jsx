@@ -1,6 +1,7 @@
 import Featured from '../components/Featured'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet'
 
 const Portofolio = () => {
     return (

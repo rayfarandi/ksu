@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Container from "../components/Container"
 import Map from "../components/Map"
 import { FaMapLocation } from "react-icons/fa6";
+import { Helmet } from "react-helmet"
 
 const Kontak = ()=>{
     return(
