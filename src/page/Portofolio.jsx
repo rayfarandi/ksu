@@ -9,8 +9,8 @@ const Portofolio = () => {
         <Helmet>
             <title>Karya Sentosa Unggul - Portofolio</title>
             <meta name='description' content='Karya Sentosa Unggul - Portofolio' />
-            <meta name='keywords' content='Portofolio Pt KSU' />
-            <link rel="canonical" href="https://karya-sentosa-unggul.co.id/portofolio" />
+            <meta name='keywords' content='Portofolio PT KSU' />
+            <link rel="canonical" href="https://karyasentosaunggul.co.id/portofolio" />
         </Helmet>
         <div className="w-full min-h-screen overflow-x-hidden relative">
         <Header />

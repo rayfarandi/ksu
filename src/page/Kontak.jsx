@@ -11,7 +11,7 @@ const Kontak = ()=>{
         <Helmet>
             <title>Karya Sentosa Unggul - Kontak</title>
             <meta name='description' content='Karya Sentosa Unggul - Kontak' />
-            <meta name='keywords' content='Kontak Pt KSU' />
+            <meta name='keywords' content='Kontak PT KSU' />
             <link rel="canonical" href="https://karya-sentosa-unggul.co.id/kontak" />
         </Helmet>
         <Header/>

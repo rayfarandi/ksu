@@ -16,7 +16,7 @@ const Home = ()=> {
             <title>Karya Sentosa Unggul - Kontraktor Terbaik</title>
             <meta name='description' content='Karya Sentosa Unggul - HomePage' />
             <meta name='keywords' content='Kontraktor Terbaik' />
-            <link rel="canonical" href="https://karya-sentosa-unggul.co.id" />
+            <link rel="canonical" href="https://karyasentosaunggul.co.id" />
         </Helmet>
         <div className="w-full min-h-screen overflow-x-hidden relative">
             <Header/>

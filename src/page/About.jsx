@@ -29,8 +29,8 @@ const Abouts = ()=> {
         <Helmet>
             <title>Karya Sentosa Unggul - About</title>
             <meta name='description' content='Karya Sentosa Unggul - About' />
-            <meta name='keywords' content='About KSU' />
-            <link rel="canonical" href="https://karya-sentosa-unggul.co.id/about" />
+            <meta name='keywords' content='About PT KSU' />
+            <link rel="canonical" href="https://karyasentosaunggul.co.id/about" />
         </Helmet>
         <div className="w-full min-h-screen overflow-x-hidden relative">
             <Header/>
