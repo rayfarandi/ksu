@@ -31,7 +31,7 @@ export const NAV_LINKS = [
   },
   {
     name: "WhatsApp",
-    url: "https://api.whatsapp.com/send?phone=628995717042&text=Hallo%20PT%20KSU",
+    url: "https://api.whatsapp.com/send?phone=6287875145832&text=Hallo%20PT%20KSU",
   },
 ];
 
